@@ -13,3 +13,20 @@ body {
     margin: 0;
     padding: 0;
 }
+
+header {
+    display: grid;
+    grid-template-columns: 128px 2fr 1fr 1fr;
+}
+
+#searchInput, #searchBtn {
+    height: 40px;
+    margin: auto 0;
+    border-radius: 5px;
+}
+
+#searchBtn {
+    width: 150px;
+    border-radius: 50px;
+}
+
