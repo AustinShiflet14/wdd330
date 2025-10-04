@@ -1,11 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NutriMate | Recipe Finder & Nutrition Tracker</title>
+    <link rel="stylesheet" href="styles/nutrimate.css"/>
+    <link rel="stylesheet" href="styles/larger.css"/>
+    <link rel="icon" href="images/NutriMate.ico"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header>
+        <nav>
+        <img src="images/logo.webp" alt="NutriMate Logo" class="logo" width="128px" height="128px" />
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mealplan.html">Meal Plan</a></li>
+            <li><a href="favorites.html">Favorites</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="subscribe.html">Subscribe</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+        </ul>
+        </nav>
+        <input type="text" id="searchInput" placeholder="Search recipes by name or ingredient..." />
+        <button id="searchBtn">Search</button>
+    </header>
+
+    <main>
+        <section class="hero">
+        <img src="images/hero-large.webp" alt="Healthy food on a table" class="heroimg"/>
+        <h1>Find Your Next Meal with NutriMate</h1>
+        <p>Discover recipes, track nutrition, and plan your meals with ease.</p>
+        </section>
+
+        <section id="results" class="recipe-results"></section>
+    </main>
+
+    <footer>
+        <p>© 2025 NutriMate | Austin Shiflet WDD-330</p>
+    </footer>
+    <script type="module" src="scripts/search.js"></script>
 </body>
 </html>

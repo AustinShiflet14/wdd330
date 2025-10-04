@@ -1,0 +1,15 @@
+:root {
+    --background-color: #FFFAF3;
+    --text-color: #404D57;
+    --primary-color: #348937;
+    --secondary-color: #FF9800;
+    --font-family: 'Bona Nova SC', serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+}
