@@ -3,30 +3,210 @@
     --text-color: #404D57;
     --primary-color: #348937;
     --secondary-color: #FF9800;
-    --font-family: 'Bona Nova SC', serif;
+    --font-family: "Bona Nova SC", serif;
 }
 
-body {
-    background-color: var(--background-color);
-    color: var(--text-color);
+* {
     font-family: var(--font-family);
-    margin: 0;
-    padding: 0;
+    background-color: var(--background-color);
+}
+/*****************HEADER******************/
+body {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 header {
     display: grid;
-    grid-template-columns: 128px 2fr 1fr 1fr;
+    grid-template-columns: 75px auto 44px;
+    padding: 15px;
+    align-items: center;
+    column-gap: 8px;
+    background-color: var(--secondary-color);
+}
+
+header img {
+    width: 75px;
+    height: 75px;
+    margin: 2px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#searchInput {
+    height: 44px;
+    border-radius: 10px;
+    justify-content: center;
+    margin: auto;
+    width: 90%;
+    max-width: 300px;
+}
+
+/*****Hamburger Menu*****/
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--background-color);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 8px
+}
+
+.hamburger::after{
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::after{
+    content: "\00d7";
+    font-size: 2rem;
+}
+
+/*****Navigation*****/
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: var(--text-color);
+    text-decoration: none;
+    border-bottom: solid 1px var(--primary-color);
+}
+
+.current a {
+    background-color: var(--primary-color);
+}
+
+.navigation a:hover, .navigation li.current a:hover {
+    background-color: var(--secondary-color);
+}
+
+.navigation1 {
+    display: none;
 }
 
 #searchInput, #searchBtn {
-    height: 40px;
-    margin: auto 0;
-    border-radius: 5px;
+    border: 2px solid var(--text-color);
+    background-color: var(--background-color);
 }
 
 #searchBtn {
-    width: 150px;
+    display: none;
+    cursor: pointer;
+    max-width: 100px;
     border-radius: 50px;
 }
 
+.hidden {
+  display: none;
+}
+
+.logo {
+    border-radius: 50px;
+}
+
+input::placeholder {
+    color: black;
+    font-style: italic;
+    font-family: var(--font-family);
+}
+
+
+
+
+/*****************BODY******************/
+.hero img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/*****************SEARCH RESULTS******************/
+#results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.recipe-card {
+  border: 1px solid var(--text-color);
+  border-radius: 8px;
+  padding: 12px;
+  background-color: var(--background-color);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.recipe-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.recipe-card .nutrition-info {
+  display: none;
+  margin-top: 10px;
+}
+
+.recipe-card.active .nutrition-info {
+  display: block;
+}
+
+.favorite-btn {
+    float: right;
+    border: none;
+}
+
+.favorite-btn .heart-icon {
+    --stroke-color: var(--primary-color);
+    --fill-color: none;
+    transition: fill 0.3s ease;
+    cursor: pointer;
+}
+
+.favorite-btn.favorited .heart-icon {
+    --fill-color: var(--primary-color);
+    --stroke-color: var(--primary-color);
+}
+
+.button {
+    border: 1px solid var(--primary-color);
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 150px 15px;
+    margin-left: 10px;
+    font-style: italic;
+}
+
+.button:hover {
+    color: var(--background-color);
+    background-color: var(--primary-color);
+}
+
+
+/*****************FOOTER******************/

@@ -30,8 +30,8 @@
         <img src="images/logo.webp" alt="NutriMate Logo" class="logo" width="128px" height="128px" />
         <nav id="nav-bar1" class="navigation1">
             <ul class="nav-links">
-                <li class="current"><a href="index.html">Home</a></li>
-                <li><a href="meals.html">Meals</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li class="current"><a href="meals.html">Meals</a></li>
                 <li><a href="favorites.html">Favorites</a></li>
                 <li><a href="subscribe.html">Subscribe</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -40,8 +40,8 @@
         </nav>
         <nav id="nav-bar" class="navigation">
             <ul class="nav-links">
-                <li class="current"><a href="index.html">Home</a></li>
-                <li><a href="meals.html">Meals</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li class="current"><a href="meals.html">Meals</a></li>
                 <li><a href="favorites.html">Favorites</a></li>
                 <li><a href="subscribe.html">Subscribe</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -52,21 +52,12 @@
         <button id="searchBtn">Search</button>
         <button id="ham-btn" class="hamburger"></button>
     </header>
-
     <main>
-        <section class="hero">
-        <picture class="hero">
-            <source srcset="images/hero-large.webp" media="(min-width: 600px)"/>
-            <img src="images/hero-small.webp" alt="hero-small" loading="lazy" width="300" height="525">
-        </picture>
-        <h1>Find Your Next Meal with NutriMate</h1>
-        <p>Discover recipes, track nutrition, and plan your meals with ease.</p>
-        </section>
+        <section id="results" class="recipe-results"></section>
     </main>
-
     <footer>
         <p>© 2025 NutriMate | Austin Shiflet WDD-330</p>
     </footer>
-    <script type="module" src="scripts/search.js"></script>
+    <script type="module" src="scripts/meals.js"></script>
 </body>
 </html>
