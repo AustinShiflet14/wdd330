@@ -22,7 +22,6 @@ async function renderFavorites() {
             card.classList.add("recipe-card", "favorite-card");
             card.dataset.recipeId = recipe.id;
 
-            // Card HTML with heart button
             card.innerHTML = `
                 <button class="favorite-btn" aria-label="Toggle favorite">
                     <svg class="heart-icon" width="24" height="24" viewBox="0 0 24 24" 
@@ -38,13 +37,12 @@ async function renderFavorites() {
             `;
 
             const favBtn = card.querySelector(".favorite-btn");
-            favBtn.classList.add("favorited"); // already a favorite
+            favBtn.classList.add("favorited");
 
-            // Click handler to remove from favorites
             favBtn.addEventListener("click", (e) => {
-                e.stopPropagation(); // prevent triggering card click
+                e.stopPropagation();
                 favBtn.classList.remove("favorited");
-                card.remove(); // remove card from DOM
+                card.remove();
                 favorites = favorites.filter(id => id !== recipe.id);
                 localStorage.setItem(favoriteKey, JSON.stringify(favorites));
 

@@ -1,4 +1,4 @@
-import { SPOON_KEY } from "./api.js"; // or wherever you store your Spoonacular key
+import { SPOON_KEY } from "./api.js";
 
 export async function getRecipesByIds(ids) {
     const results = [];

@@ -53,15 +53,13 @@ searchBtn.addEventListener("click", async () => {
         const favBtn = card.querySelector(".favorite-btn");
         const recipeId = recipe.id;
 
-        // Initialize favorite state
         if (favorites.includes(recipeId)) {
             favBtn.classList.add("favorited");
             card.classList.add("favorite-card");
         }
 
-        // Toggle favorite on click
         favBtn.addEventListener("click", (e) => {
-            e.stopPropagation(); // Prevent triggering card click
+            e.stopPropagation();
             if (favBtn.classList.contains("favorited")) {
                 favBtn.classList.remove("favorited");
                 card.classList.remove("favorite-card");
@@ -74,7 +72,7 @@ searchBtn.addEventListener("click", async () => {
             saveFavorites();
         });
 
-        // Card click to expand nutrition info
+        
         card.addEventListener("click", async () => {
             card.classList.toggle("active");
 
