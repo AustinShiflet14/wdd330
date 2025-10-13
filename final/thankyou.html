@@ -30,9 +30,9 @@
         <img src="images/logo.webp" alt="NutriMate Logo" class="logo" width="128px" height="128px" />
         <nav id="nav-bar1" class="navigation1">
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
+                <li class="current"><a href="index.html">Home</a></li>
                 <li><a href="meals.html">Meals</a></li>
-                <li class="current"><a href="favorites.html">Favorites</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
                 <li><a href="subscribe.html">Subscribe</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="about.html">About</a></li>
@@ -40,9 +40,9 @@
         </nav>
         <nav id="nav-bar" class="navigation">
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
+                <li class="current"><a href="index.html">Home</a></li>
                 <li><a href="meals.html">Meals</a></li>
-                <li class="current"><a href="favorites.html">Favorites</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
                 <li><a href="subscribe.html">Subscribe</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="about.html">About</a></li>
@@ -53,7 +53,16 @@
         <button id="ham-btn" class="hamburger"></button>
     </header>
     <main>
-        <div id="results"></div>
+        <h1>Your Form Has Been Submitted</h1>
+        <p>Please allow us up to 1 business day to respond, although most times it doesn't take that long</p>
+        <p><strong>First Name:</strong> <span id="firstName"></span></p>
+        <p><strong>Last Name:</strong> <span id="lastName"></span></p>
+        <p><strong>Email:</strong> <span id="email"></span></p>
+        <p><strong>Phone:</strong> <span id="phone"></span></p>
+        <p><strong>Topic of Inquiry:</strong> <span id="topic"></span></p>
+        <p><strong>Description:</strong> <span id="descrip"></span></p>
+        <p><strong>Timestamp:</strong> <span id="timestamp"></span></p>
+        <p>We will review your information and get back to you as soon as possible!</p>
     </main>
     <footer>
         <p>© 2025 NutriMate</p>
@@ -61,6 +70,5 @@
         <p>Austin Shiflet WDD-330</p>
     </footer>
     <script type="module" src="scripts/search.js"></script>
-    <script type="module" src="scripts/favorites.js"></script>
 </body>
 </html>

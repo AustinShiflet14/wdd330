@@ -48,13 +48,55 @@
                 <li><a href="about.html">About</a></li>
             </ul>
         </nav>
-        <input type="text" id="searchInput" inputmode="search" placeholder="Search recipes by keyword..." />
+        <input type="text" id="searchInput" class="search" inputmode="search" placeholder="Search recipes by keyword..." />
         <button id="searchBtn">Search</button>
         <button id="ham-btn" class="hamburger"></button>
     </header>
-     <main></main>
+    <main>
+        <h1>Have A Question? Contact Us Here! ↴</h1>
+        <p class="formp">Please fill out the form below with as much detail as possible</p>
+        <div>    
+            <section>
+                <form method="get" action="thankyou.html">
+                    <div class="form-header">
+                        <label title="First Name">
+                        First Name:
+                        <input type="text" class="formy" name="firstName" required autocomplete="given-name" title="First Name">
+                        </label>
+                        <label title="Last Name">
+                        Last Name:
+                        <input type="text" class="formy" name="lastName" required autocomplete="family-name" title="Last Name">
+                        </label>
+                        <label title="Email Address">
+                        Email:
+                        <input type="email" class="formy" name="email" required autocomplete="email" placeholder="example@email.com" title="Email Address">
+                        </label>
+                        <label title="Mobile Phone">
+                        Mobile Phone:
+                        <input type="tel" class="formy" name="phone" required autocomplete="tel" title="Mobile Phone">
+                        </label>
+                    </div>
+                    <div class="form-body">
+                        <label title="topic">
+                            What's The Topic Of Your Question?
+                            <input type="text" class="formy" name="topic" required autocomplete="info box" title="Ask a Question" placeholder="Ex: Meal Planning, Nutrition Tracking, etc.">
+                        </label>
+
+                        <label title="Description" class="notrequired">
+                        Description:
+                        <textarea name="descrip" title="Give a Detailed Description" placeholder="Please Leave a detailed message about your question/concern, and we will reach back out to you as soon as possible!"></textarea>
+                        </label>
+                    </div>
+                    <input type="hidden" name="timestamp" id="timestamp">
+                    <input type="submit" value="Ask NutriMate!">
+                </form>
+            </section>
+        </div>
+    </main>
     <footer>
-        <p>© 2025 NutriMate | Austin Shiflet WDD-330</p>
+        <p>© 2025 NutriMate</p>
+        <p>|</p>
+        <p>Austin Shiflet WDD-330</p>
     </footer>
     <script type="module" src="scripts/search.js"></script>
 </body>
