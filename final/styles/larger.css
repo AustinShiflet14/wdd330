@@ -66,4 +66,8 @@
     .index {
         grid-template-columns: 1fr 1fr;
     }
+    .subscribe {
+        top: 8rem;
+        left: 4rem;
+    }
 }
