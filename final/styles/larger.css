@@ -63,4 +63,7 @@
     #results {
         grid-template-columns: repeat(4, 1fr);
     }
+    .index {
+        grid-template-columns: 1fr 1fr;
+    }
 }

@@ -1,4 +1,4 @@
-export const SPOON_KEY = "fc762091b83e45ce8deaf77f8a2dd52e";
+export const SPOON_KEY = "8a744b7972c7447aa068f6da93986d75";
 
 export async function getRecipes(query) {
     const url = `https://api.spoonacular.com/recipes/complexSearch?query=${query}&addRecipeInformation=true&number=10&apiKey=${SPOON_KEY}`;
